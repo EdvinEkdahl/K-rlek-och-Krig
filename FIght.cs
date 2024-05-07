@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 class FIght
 {
-    public void takeDamage()
+    Player player;
+    Enemy enemy;
+
+    public void Battle()
     {
         
     }
