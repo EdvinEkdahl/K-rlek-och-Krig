@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 class Enemy : Character
 {
-    public Enemy(string Name__, int Health__, int Streagnth__, int maxHealth__)
+    public int HitChance;
+
+    public Enemy(string Name__, int Health__, int Streagnth__, int maxHealth__, int HitChance__)
     {
         Name = Name__;
         Health = Health__;
         Streagnth = Streagnth__;
         maxHealth = maxHealth__;
+        HitChance = HitChance__;
 
         Health = maxHealth;
     }

@@ -10,6 +10,7 @@ class Character
     public int Streagnth;
     public int maxHealth;
     public string Name;
+    public bool IsAlive = true;
 
 }
 
