@@ -6,9 +6,29 @@ using System.Threading.Tasks;
 
 class Dejter
 {
+    string dejtVal;
+
+    //Här är alla dejter och vad som kommer att hända i dem.
     public void Alicia()
     {
         Console.WriteLine("Dejten är en kvinna som heter Alicia Datura, profilen säger att hon vill ha en partner som hon kan lita på som också litar på henne, hennes största hobby är att ta hand om hennes favoritblomma som är en Spikklubba. Hennes favoriträtt är kaktussallad. Hon jobbar bara kvällstid. 174 cm, långt rakt svart hår och smaragdgröna ögon.");
+        Console.WriteLine("");
+        Console.WriteLine("1) Gå på dejt.\n2) Välj en annan person.");
+
+        dejtVal = Console.ReadLine();
+        
+        if(dejtVal == "1")
+        {
+            Console.WriteLine("Charizard");
+        }
+        if(dejtVal == "2")
+        {
+            Console.Clear();
+        }
+        else
+        {
+            Console.WriteLine("Välj ett giltigt nummer. ");
+        }
     }
 
     public void Robert()
