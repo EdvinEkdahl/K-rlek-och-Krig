@@ -19,7 +19,11 @@ class Dejter
         
         if(dejtVal == "1")
         {
-            Console.WriteLine("Charizard");
+            Console.WriteLine("Du får ett samtal.\nPersonen som ringer säger att någon som du möter under dejten kommer att försöka mörda dig." +
+                "\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
+            Console.ReadLine();
+
+            Console.WriteLine("");
         }
         if(dejtVal == "2")
         {
