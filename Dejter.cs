@@ -23,7 +23,9 @@ class Dejter
                 "\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
             Console.ReadLine();
 
+            Console.WriteLine("Du träffar Alicia i en park, ni går runt och pratar om blommor.");
             Console.WriteLine("");
+
         }
         if(dejtVal == "2")
         {
