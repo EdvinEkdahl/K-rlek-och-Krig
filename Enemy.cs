@@ -8,11 +8,12 @@ class Enemy : Character
 {
     public int HitChance;
 
-    public Enemy(string Name__, int Health__, int Streagnth__, int maxHealth__, int HitChance__)
+    public Enemy(string Name__, int Health__, int minStrength__, int maxStrength__, int maxHealth__, int HitChance__)
     {
         Name = Name__;
         Health = Health__;
-        Streagnth = Streagnth__;
+        minStrength = minStrength__;
+        maxStrength = maxStrength__;
         maxHealth = maxHealth__;
         HitChance = HitChance__;
 
