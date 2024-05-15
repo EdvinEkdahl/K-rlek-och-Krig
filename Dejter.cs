@@ -24,7 +24,9 @@ class Dejter
             Console.ReadLine();
 
             Console.WriteLine("Du träffar Alicia i en park, ni går runt och pratar om blommor.");
-            Console.WriteLine("");
+            Console.WriteLine("1) Varför är spikklubba din favorit blomma?\n" +
+                "2) Jag tycker inte om blommor så mycket.\n" +
+                "3) ");
 
         }
         if(dejtVal == "2")
@@ -37,7 +39,7 @@ class Dejter
         }
         
         //Test
-        Player player = new("Rayan", 10, 1, 3, 10);
+        Player player = new("Du", 10, 1, 3, 10);
         Enemy Alicia = new("Alicia", 10, 1, 3, 10, 4);
         FIght fIght = new();
         
@@ -47,20 +49,7 @@ class Dejter
             Console.ReadLine();
         }
         Console.Clear();
-        //Test
-        
-        //Test
-        Player player = new("Rayan", 10, 1, 3, 10);
-        Enemy Alicia = new("Alicia", 10, 1, 3, 10, 4);
-        FIght fIght = new();
-        
-        while (player.IsAlive == true && Alicia.IsAlive == true)
-        {
-            fIght.Battle(player, Alicia);
-            Console.ReadLine();
-        }
-        Console.Clear();
-        //Test
+       
     }
 
     public void Robert()
