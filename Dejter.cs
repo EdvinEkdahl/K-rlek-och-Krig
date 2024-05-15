@@ -49,18 +49,6 @@ class Dejter
         Console.Clear();
         //Test
         
-        //Test
-        Player player = new("Rayan", 10, 1, 3, 10);
-        Enemy Alicia = new("Alicia", 10, 1, 3, 10, 4);
-        FIght fIght = new();
-        
-        while (player.IsAlive == true && Alicia.IsAlive == true)
-        {
-            fIght.Battle(player, Alicia);
-            Console.ReadLine();
-        }
-        Console.Clear();
-        //Test
     }
 
     public void Robert()
