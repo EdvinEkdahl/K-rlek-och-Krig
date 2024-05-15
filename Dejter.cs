@@ -71,7 +71,7 @@ class Dejter
             {
                 case "1":
                     Player player = new("Du", 10, 1, 3, 10);
-                    Enemy GlassGubben = new("Glass Gubben", 10, 100, 100, 10, 4);
+                    Enemy GlassGubben = new("Glass Gubben", 10, 1, 3, 10, 4);
                     FIght fIght = new();
 
                     while (player.IsAlive == true && GlassGubben.IsAlive == true)
