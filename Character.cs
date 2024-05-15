@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 class Character
 {
     public int Health;
-    public int Streagnth;
+    public int minStrength;
+    public int maxStrength;
     public int maxHealth;
     public string Name;
     public bool IsAlive = true;
