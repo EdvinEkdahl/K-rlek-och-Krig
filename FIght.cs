@@ -16,23 +16,23 @@ class FIght
 
     void EnemyTurn(Player player, Enemy enemy)
     {
-        D6 = random.Next(1, 7);
-        enemyDamage = random.Next(enemy.minStrength, enemy.maxStrength + 1);
+        D6 = random.Next(1, 7); //Rolls a D6 (Randomizes a value between 1 - 6)
+        enemyDamage = random.Next(enemy.minStrength, enemy.maxStrength + 1); //Randomizes damage
 
-        if (D6 >= enemy.HitChance)
+        if (D6 >= enemy.HitChance) //Checks if the enemy rolled equal or higher than their hit chance
         {
-            player.Health -= enemyDamage;
-            Console.WriteLine(enemy.Name + " dealt " + enemyDamage + " damage");
+            player.Health -= enemyDamage; //Player takes damage equal to enemy damage
+            Console.WriteLine(enemy.Name + " gjorde " + enemyDamage + " skada\n");
 
-            if (player.Health <= 0)
+            if (player.Health <= 0) //Checks if the player is dead
             {
-                Console.WriteLine(player.Name + " has been defeated");
-                player.IsAlive = false;
+                Console.WriteLine(player.Name + " har blivit besegrad");
+                player.IsAlive = false; //Player is now considered dead
             }
         }
-        else
+        else //If enemy rolls the D6 lower than their hit chance
         {
-            Console.WriteLine(enemy.Name + " missed their attack");
+            Console.WriteLine(enemy.Name + " missade sin attack\n");
         }
     }
 
@@ -40,44 +40,48 @@ class FIght
     {
         Console.Clear();
         Console.WriteLine(player.Name + ": HP: " + player.Health + "/" + player.maxHealth + "\n" +
-                          enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth);
+                          enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth + "\n");
 
-        playerDamage = random.Next(player.minStrength, player.maxStrength + 1);
+        playerDamage = random.Next(player.minStrength, player.maxStrength + 1); //Randomizes damage
 
-        enemy.Health -= playerDamage;
-        Console.WriteLine(player.Name + " dealt " + playerDamage + " damage");
+        enemy.Health -= playerDamage; //Enemy takes damage equal to player damage
+        Console.WriteLine(player.Name + " gjorde " + playerDamage + " skada");
 
-        if (enemy.Health <= 0)
+        if (enemy.Health <= 0) //Checks if enemy is dead
         {
-            Console.WriteLine(enemy.Name + " has been defeated");
-            enemy.IsAlive = false;
+            Console.WriteLine(enemy.Name + " har blivit besegrad\n");
+            enemy.IsAlive = false; //Enemy is considred dead
         }
-        else
+        else //Enemy gets to do their turn
         {
             EnemyTurn(player, enemy);
         }
 
         Console.WriteLine(player.Name + ": HP: " + player.Health + "/" + player.maxHealth + "\n" +
-                          enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth);
+                          enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth + "\n");
     }
 
     public void Block(Player player, Enemy enemy)
     {
         Console.Clear();
         Console.WriteLine(player.Name + ": HP: " + player.Health + "/" + player.maxHealth + "\n" +
-                          enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth);
+                          enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth + "\n");
 
+        //Player gains a random amount of health
         playerHeal = random.Next(0,4);
         player.Health += playerHeal;
+
+        //Sets player health to max health it excceds max health
         if(player.Health > player.maxHealth)
         {
             player.Health = player.maxHealth;
         }
-        Console.WriteLine(player.Name + " healed " + playerHeal + " HP");
+
+        Console.WriteLine(player.Name + " fick tillbaka " + playerHeal + " HP");
         EnemyTurn(player, enemy);
 
         Console.WriteLine(player.Name + ": HP: " + player.Health + "/" + player.maxHealth + "\n" +
-                          enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth);
+                          enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth + "\n");
     }
 }
 

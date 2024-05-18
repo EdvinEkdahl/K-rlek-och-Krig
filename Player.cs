@@ -14,9 +14,6 @@ class Player : Character
         minStrength = minStrength__;
         maxStrength = maxStrength__;
         maxHealth = maxHealth__;
-
-        Health = maxHealth;
     }
-
 }
 

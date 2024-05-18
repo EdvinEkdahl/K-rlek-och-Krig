@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 class Enemy : Character
 {
-    public int HitChance;
+    public int HitChance; //A value to see whether a attack lands or not based of
 
     public Enemy(string Name__, int Health__, int minStrength__, int maxStrength__, int maxHealth__, int HitChance__)
     {
@@ -16,8 +16,6 @@ class Enemy : Character
         maxStrength = maxStrength__;
         maxHealth = maxHealth__;
         HitChance = HitChance__;
-
-        Health = maxHealth;
     }
 }
 

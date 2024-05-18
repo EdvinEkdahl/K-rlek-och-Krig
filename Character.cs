@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 class Character
 {
-    public int Health;
-    public int minStrength;
-    public int maxStrength;
-    public int maxHealth;
-    public string Name;
-    public bool IsAlive = true;
+    public int Health; //Amount of health
+    public int minStrength; //The minimum damage a character can deal
+    public int maxStrength; //The maximum damage a character can deal
+    public int maxHealth; //The value health should not excced
+    public string Name; //Name of the character
+    public bool IsAlive = true; //Changes if character dies
 
 }
 
