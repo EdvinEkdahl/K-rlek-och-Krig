@@ -1,4 +1,6 @@
-﻿class Program
+﻿using AätiKoK;
+
+class Program
 {
     private static void Main(string[] args)
     {
@@ -29,7 +31,16 @@
             
             Console.WriteLine("6) Avsluta.");
 
-            playerChoose = Console.ReadLine();
+            if (dejt1 == false && dejt2 == false && dejt3 == false && dejt4 == false && dejt5 == false)
+            {
+                End end = new();
+                end.EndScene();
+                playerChoose = "6";
+            }
+            else
+            {
+                playerChoose = Console.ReadLine();
+            }
 
             Console.Clear();
 
@@ -136,6 +147,9 @@
 
                 default:
                     Console.WriteLine("Välj ett giltigt nummer."); // skrivs ut när du skriver in något som inte står.
+                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
+                    Console.ReadLine();
+                    Console.Clear();
                     break;
             }
         }
