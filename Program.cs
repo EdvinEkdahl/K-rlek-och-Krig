@@ -31,7 +31,7 @@ class Program
             
             Console.WriteLine("6) Avsluta.");
 
-            if (dejt1 == false && dejt2 == false && dejt3 == false && dejt4 == false && dejt5 == false)
+            if (dejt1 == false && dejt2 == false && dejt3 == false && dejt4 == false && dejt5 == false) //Går till en slut scene om du gått igenom alla dejter
             {
                 End end = new();
                 end.EndScene();
