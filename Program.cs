@@ -4,7 +4,7 @@
     {
         Dejter dejter = new();
         string playerChoose = "0";
-        bool dejt1 = true, dejt2 = true, dejt3 = true, dejt4 = true, dejt5 = true;
+        bool dejt1 = true, dejt2 = true, dejt3 = true, dejt4 = true, dejt5 = true; 
 
         while (playerChoose != "6")
         {
@@ -33,14 +33,14 @@
 
             Console.Clear();
 
-            switch (playerChoose)
+            switch (playerChoose) // skriver ut dejt profilen på personen du valde. 
             {
                 case "1":
                     if (dejt1 == true)
                     {
                         Console.WriteLine("Dejten är en kvinna som heter Alicia Datura, profilen säger att hon vill ha en partner som hon kan lita på som också litar på henne, hennes största hobby är att ta hand om hennes favoritblomma som är en Spikklubba. Hennes favoriträtt är kaktussallad. Hon jobbar bara kvällstid. 174 cm, långt rakt svart hår och smaragdgröna ögon.");
                         Console.WriteLine("");
-                        Console.WriteLine("1) Gå på dejt.\n2) Välj en annan person.");
+                        Console.WriteLine("1) Gå på dejt.\n2) Välj en annan person."); // väljer om du vill gå på dejt med den här personen.
 
                         playerChoose = Console.ReadLine();
 
@@ -131,11 +131,11 @@
                     break;
 
                 case "6":
-                    Console.WriteLine("Programmet avslutas.");
+                    Console.WriteLine("Programmet avslutas."); // stänger av programet/spelet.
                     return;
 
                 default:
-                    Console.WriteLine("Välj ett giltigt nummer.");
+                    Console.WriteLine("Välj ett giltigt nummer."); // skrivs ut när du skriver in något som inte står.
                     break;
             }
         }
