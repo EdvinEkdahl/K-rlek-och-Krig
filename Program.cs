@@ -33,8 +33,11 @@ class Program
 
             if (dejt1 == false && dejt2 == false && dejt3 == false && dejt4 == false && dejt5 == false) //Går till en slut scene om du gått igenom alla dejter
             {
-                End end = new();
-                end.EndScene();
+                Console.Clear();
+                Console.WriteLine("Grattis, du har nu upplevt alla dejter. Men vill du att ditt lilla äventyr ska sluta så här? Har du upplevt allt du villa uppleva?");
+                Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT AVSLUTA.");
+                Console.ReadLine();
+                Console.Clear();
                 playerChoose = "6";
             }
             else
