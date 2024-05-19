@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class Character
+abstract class Character
 {
     public int Health; //Amount of health
     public int minStrength; //The minimum damage a character can deal
