@@ -1561,7 +1561,7 @@ public void Svea() // startar när du startar dejten med Svea
             }
 
             dejtVal = "";
-            while (dejtVal != "1" && dejtVal != "2")
+            while (dejtVal != "1" && dejtVal != "2" && dejtVal != "3")
             {
                 Console.WriteLine("Ni går runt där inne lite till innan ni känner er färdiga.\n" +
                     "1) Fråga vad som har varit det bästa med dejten.\n" +
