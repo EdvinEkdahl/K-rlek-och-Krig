@@ -33,30 +33,22 @@ class Dejter
             {
                 case "1": // startar om spelaren skriver in 1
                     Console.WriteLine("... för att... emmmm... den ser vaker ut.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 case "2": // startar om spelaren skriver in 2
                     Console.WriteLine("Nhä, jaja alla kan ju inte gilla blommor.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 case "3": // startar om spelaren skriver in 3
                     Console.WriteLine("Jag vet inte. Jag lyssnar inte så mycket på musik. Men det är säkert bra.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 default: // startar om spelaren skriver in något som inte är nummren som är skrivna
                     Console.WriteLine("Välj ett giltigt nummer.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
             }
 
@@ -93,9 +85,7 @@ class Dejter
                                 fIght.Battle(player, GlassGubben);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player.IsAlive == false)
                         {
@@ -106,16 +96,12 @@ class Dejter
                     case "2":
                         Console.WriteLine("Du bytte glass med Alicia.\n" +
                         "Du dog av förgiftning.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -137,39 +123,27 @@ class Dejter
                 {
                     case "1":
                         Console.WriteLine("Det var ju synd, det var nästan rätt. Det är samma färg bara två olika blommor.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "2":
                         Console.WriteLine("Nej det är inte rätt.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "3":
                         Console.WriteLine("Jag vill ge dig rätt för den, men det är tyvärr fel.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "4":
                         Console.WriteLine("Japp det är helt rätt. Han säger ju: Åh en maskros måste vara säsongens sista.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "5":
                         Console.WriteLine("Det är helt fel. Det var faktiskt inte ens i närheten.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -201,9 +175,7 @@ class Dejter
                     fIght1.Battle(player1, Blomtjejen);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player1.IsAlive == false)
             {
@@ -243,9 +215,7 @@ class Dejter
                                 fIght2.Battle(player2, Mikael);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player2.IsAlive == false)
                         {
@@ -253,16 +223,12 @@ class Dejter
                         }
 
                         Console.WriteLine("Alicia hade lagt ner en bit spikklubba i din kaktus salad så du dog.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     case "2":
                         Console.WriteLine("Vad fan menar du NEJ?! JAG SKA DÖDA DIG!");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         Player player3 = new("Du", 10, 1, 3, 10);
                         Enemy Alicia = new("Alicia Datura", 10, 1, 3, 10, 2);
@@ -284,9 +250,7 @@ class Dejter
                                 fIght3.Battle(player3, Alicia);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player3.IsAlive == false)
                         {
@@ -296,9 +260,7 @@ class Dejter
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -317,21 +279,15 @@ class Dejter
                 {
                     case "1":
                         Console.WriteLine("Du och Mikael gick på dejt istället och hade det välgit trevligt.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     case "2":
                         Console.WriteLine("Nähä... då får väll jag gå hem och programera istället.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -355,39 +311,29 @@ class Dejter
             {
                 case "1":
                     Console.WriteLine("Snälla kalla mig Byggare Bob istället det gör alla andra. Vi håller på att bygga ett parkeringshus.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 case "2":
                     Console.WriteLine("Snälla kalla mig Byggare Bob istället det gör alla andra. Jag har aldrig rikitgt hittat ett ställe som passar mig, tills att jag flyttade hit.Det här stället är väldigt fint.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 case "3":
                     Console.WriteLine("Jag kan inte svara på den frågan. Jag har aldrig hållt på med det. Men snälla kalla mig Byggare Bob istället det gör alla andra.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 default:
                     Console.WriteLine("Välj ett giltigt nummer.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
             }
 
 
             Console.WriteLine("Du och Byggare Bob går runt och plockar upp alla pinnar som faller ner från träden som de håller på att såga ner." +
                 "\nMen helt plötsligt så hör du ett stort brak och när du kollar upp ser du att det kommer en stor trä stock rullande mot dig.");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
             Player player = new("Du", 10, 1, 3, 10);
             Enemy TräStock = new("Trä Stock", 5, 10, 10, 5, 6);
             FIght fIght = new();
@@ -408,9 +354,7 @@ class Dejter
                     fIght.Battle(player, TräStock);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player.IsAlive == false)
             {
@@ -434,39 +378,27 @@ class Dejter
                 {
                     case "1":
                         Console.WriteLine("Det Var ju tur.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "2":
                         Console.WriteLine("Det för står jag.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "3":
                         Console.WriteLine("Ja det var en upplevelse och du ser ut att må bra ut.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "4":
                         Console.WriteLine("Jag vet men den gjorde inte det ellerhur.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "5":
                         Console.WriteLine("Det var ju tur. Jag vill ju inte att min första arbetsplats olycka är när jag är på dejt.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -474,8 +406,7 @@ class Dejter
             Console.WriteLine("Du och Byggare Bob fortsätter med att plocka upp grenar i några timmar till. Efter ett tag så börjar en massa personer samlas runt bygget." +
                 "Till slut så står det 10 personer där, det är miljöaktivister allihopa. De börjar demonstrera för att de gillar inte att ni hugger ner träden.");
             Console.WriteLine("Du inser att det finns bara en väg ut ur det här. Du behöver strida mot alla.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player1 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist1 = new("Miljöaktivist 1", 10, 1, 3, 10, 4);
@@ -497,9 +428,7 @@ class Dejter
                     fIght1.Battle(player1, Miljöaktivist1);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player1.IsAlive == false)
             {
@@ -507,10 +436,8 @@ class Dejter
             }
 
             Console.WriteLine("1/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
-            
+            Continue();
+
             Player player2 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist2 = new("Miljöaktivist 2", 10, 1, 3, 10, 3);
             FIght fIght2 = new();
@@ -531,9 +458,7 @@ class Dejter
                     fIght2.Battle(player2, Miljöaktivist2);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player2.IsAlive == false)
             {
@@ -541,9 +466,7 @@ class Dejter
             }
 
             Console.WriteLine("2/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player3 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist3 = new("Miljöaktivist 3", 10, 2, 3, 10, 4);
@@ -565,9 +488,7 @@ class Dejter
                     fIght3.Battle(player3, Miljöaktivist3);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player3.IsAlive == false)
             {
@@ -575,9 +496,7 @@ class Dejter
             }
 
             Console.WriteLine("3/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player4 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist4 = new("Miljöaktivist 4", 10, 1, 3, 10, 3);
@@ -599,9 +518,7 @@ class Dejter
                     fIght4.Battle(player4, Miljöaktivist4);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player4.IsAlive == false)
             {
@@ -609,9 +526,7 @@ class Dejter
             }
 
             Console.WriteLine("4/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player5 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist5 = new("Miljöaktivist 5", 10, 1, 3, 10, 3);
@@ -633,9 +548,7 @@ class Dejter
                     fIght5.Battle(player5, Miljöaktivist5);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player5.IsAlive == false)
             {
@@ -643,9 +556,7 @@ class Dejter
             }
 
             Console.WriteLine("5/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player6 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist6 = new("Miljöaktivist 6", 10, 1, 3, 10, 3);
@@ -667,9 +578,7 @@ class Dejter
                     fIght6.Battle(player6, Miljöaktivist6);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player6.IsAlive == false)
             {
@@ -677,9 +586,7 @@ class Dejter
             }
 
             Console.WriteLine("6/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player7 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist7 = new("Miljöaktivist 7", 10, 1, 3, 10, 3);
@@ -701,9 +608,7 @@ class Dejter
                     fIght7.Battle(player7, Miljöaktivist7);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player7.IsAlive == false)
             {
@@ -711,9 +616,7 @@ class Dejter
             }
 
             Console.WriteLine("7/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player8 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist8 = new("Miljöaktivist 8", 10, 1, 3, 10, 3);
@@ -735,9 +638,7 @@ class Dejter
                     fIght8.Battle(player8, Miljöaktivist8);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player8.IsAlive == false)
             {
@@ -745,9 +646,7 @@ class Dejter
             }
 
             Console.WriteLine("8/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player9 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist9 = new("Miljöaktivist 9", 10, 1, 3, 10, 3);
@@ -769,9 +668,7 @@ class Dejter
                     fIght9.Battle(player9, Miljöaktivist9);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player9.IsAlive == false)
             {
@@ -779,9 +676,7 @@ class Dejter
             }
 
             Console.WriteLine("9/10 besegrade. Nästa strid!");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             Player player10 = new("Du", 10, 1, 3, 10);
             Enemy Miljöaktivist10 = new("Miljöaktivist 10", 10, 1, 3, 10, 3);
@@ -803,9 +698,7 @@ class Dejter
                     fIght10.Battle(player10, Miljöaktivist10);
                 }
             }
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             if (player10.IsAlive == false)
             {
@@ -813,9 +706,7 @@ class Dejter
             }
             
             Console.WriteLine("10/10 miljöaktivister besegrade. Bra jobbat.");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             dejtVal = "";
             while (dejtVal != "1" && dejtVal != "2")
@@ -850,9 +741,7 @@ class Dejter
                                 fIght11.Battle(player11, Tom);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player11.IsAlive == false)
                         {
@@ -863,17 +752,13 @@ class Dejter
                     case "2":
                         Console.WriteLine("Byggare Bob går fram till sin tvilling bror Tom och ber honom att sluta med det här." +
                             "Tom går med på det och båda två går iväg mot solnedgången och lämnar dig.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         return;
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -885,10 +770,8 @@ class Dejter
 
 public void Svea() // startar när du startar dejten med Svea
     {
-        Console.WriteLine("Du ringer till en fin resturang och bokar ett bord åt dig och Svea." +
-               "\n\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-        Console.ReadLine();
-        Console.Clear();
+        Console.WriteLine("Du ringer till en fin resturang och bokar ett bord åt dig och Svea.");
+        Continue();
 
         dejtVal = "";
         while (dejtVal != "1" && dejtVal != "2" && dejtVal != "3")
@@ -905,30 +788,22 @@ public void Svea() // startar när du startar dejten med Svea
             {
                 case "1":
                     Console.WriteLine("För att jag älskar kärlek och lite drama också.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 case "2":
                     Console.WriteLine("VA!?!? TYCKER DU INTE OM ROMANTISKA FILMER!! DEN HÄR DEJTEN ÄR ÖVER.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     return;
 
                 case "3":
                     Console.WriteLine("Nae fy fy. Det är alldeles för mycket våld i dem spelen.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 default:
                     Console.WriteLine("Välj ett giltigt nummer.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
             }
 
@@ -949,9 +824,7 @@ public void Svea() // startar när du startar dejten med Svea
                 {
                     case "1":
                         Console.WriteLine("Du lämnar bordet och hittar eran servitris. Du attackerar honom.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         Player player = new("Du", 10, 1, 3, 10);
                         Enemy Servitrisen = new("Servitrisen", 10, 1, 2, 10, 6);
@@ -973,9 +846,7 @@ public void Svea() // startar när du startar dejten med Svea
                                 fIght.Battle(player, Servitrisen);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player.IsAlive == false)
                         {
@@ -985,16 +856,12 @@ public void Svea() // startar när du startar dejten med Svea
 
                     case "2":
                         Console.WriteLine("Svea gillar inte våld så hon går ut från resturangen och dejten är över.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     case "3":
                         Console.WriteLine("Svea förstår att du behöver göra det. Du lämnar bordet letar upp servitrisen och attackerar honom.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         Player player1 = new("Du", 10, 1, 3, 10);
                         Enemy Servitrisen1 = new("Servitrisen", 10, 1, 2, 10, 6);
@@ -1016,9 +883,7 @@ public void Svea() // startar när du startar dejten med Svea
                                 fIght1.Battle(player1, Servitrisen1);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player1.IsAlive == false)
                         {
@@ -1028,16 +893,12 @@ public void Svea() // startar när du startar dejten med Svea
 
                     case "4":
                         Console.WriteLine("Svea undrade vart du gick så hon följde med och såg att du attackerade servitrisen. Hon sprang ut ur resturangen och dejten avslutades.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -1060,9 +921,7 @@ public void Svea() // startar när du startar dejten med Svea
                 {
                     case "1":
                         Console.WriteLine("Svea förstår. Alla behöver ju gå på toa. När du har lämnat bordet så letar du upp servitrisen och attackerar han.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         Player player2 = new("Du", 10, 1, 3, 10);
                         Enemy Servitrisen2 = new("Servitrisen", 10, 1, 2, 10, 6);
@@ -1084,9 +943,7 @@ public void Svea() // startar när du startar dejten med Svea
                                 fIght2.Battle(player2, Servitrisen2);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player2.IsAlive == false)
                         {
@@ -1096,15 +953,11 @@ public void Svea() // startar när du startar dejten med Svea
                         
                     case "2":
                         Console.WriteLine("Hon undrade vart du tog vägen någon stans så hon letade upp dig och såg att du attackerade servitrisen. Hon gick fram och gav dig en ör fil. Dejten är över.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     case "3":
                         Console.WriteLine("Svea tycker att du är jätte snäll som är villig att hjälpa en person som du inte känner. När du länat bordet letar du upp servitrisen och attackerar honom.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         Player player3 = new("Du", 10, 1, 3, 10);
                         Enemy Servitrisen3 = new("Servitrisen", 10, 1, 2, 10, 6);
@@ -1126,9 +979,7 @@ public void Svea() // startar när du startar dejten med Svea
                                 fIght3.Battle(player3, Servitrisen3);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player3.IsAlive == false)
                         {
@@ -1137,23 +988,17 @@ public void Svea() // startar när du startar dejten med Svea
                         break;
                     case "4":
                         Console.WriteLine("Svea började gråta och sprang ut från resturangen. Dejten är över.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     case "5":
                         Console.WriteLine("Du spillde din dricka över dig. Svea gick med dig bort till köket för att fråga om en disktrasa.\n" +
                             "När ni kommer fram så kommer servitrisen och slår dig. Svea ger honom en ör fil och undrar vad för typ av resturang det här är.\n" +
                             "Ni går hem till henne beställer pizza och kollar på en romantisk film. Du klarade dejten.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -1172,24 +1017,18 @@ public void Svea() // startar när du startar dejten med Svea
                 {
                     case "1":
                         Console.WriteLine("Svea börjar skrika på dig. Dejten är över. Svea blev ihop med servitrisen efter att han berättat allt som hände.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     case "2":
                         Console.WriteLine("Svea följde efter dig utan att du viste det och såg när du attackerade servitrisen. Hon gick fram gav dig en ör fil.\n" +
                             "Du misslyckades med dejten. Svea blev ihop med servitrisen istället.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -1213,30 +1052,22 @@ public void Svea() // startar när du startar dejten med Svea
             {
                 case "1":
                     Console.WriteLine("Du går igenom utan problem, men Noah blir så rädd att han höll på att kissa på sig.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 case "2":
                     Console.WriteLine("Ekorren var gjord av metall. Du fick väldigt ont i handen.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 case "3":
                     Console.WriteLine("Noah blir inte glad med att du gjorde det här. Han blundar och försöker springa igenom rummet. Men han springer rakt in i ekorren.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 default:
                     Console.WriteLine("Välj ett giltigt nummer.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
             }
 
@@ -1253,16 +1084,12 @@ public void Svea() // startar när du startar dejten med Svea
                 {
                     case "1":
                         Console.WriteLine("Det kom en kort person klädd som en zombie ut från en av dörrarna. Han gick rakt förbi er och öppnade en annan dörr. Ni gick också ut genom samma dörr.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
 
                     case "2":
                         Console.WriteLine("Du berädde dig själv på vad som helst. En kort person utklädd till Zombie kom ut genom en dörr. Du attackerar honom.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         Player player = new("Du", 10, 1, 3, 10);
                         Enemy Zombie = new("Zombie Skådespelaren", 10, 1, 3, 10, 4);
@@ -1284,9 +1111,7 @@ public void Svea() // startar när du startar dejten med Svea
                                 fIght.Battle(player, Zombie);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player.IsAlive == false)
                         {
@@ -1296,9 +1121,7 @@ public void Svea() // startar när du startar dejten med Svea
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -1319,42 +1142,30 @@ public void Svea() // startar när du startar dejten med Svea
                     case "1":
                         Console.WriteLine("Ni sprang rakt igenom korridoren. Men när ni kom fram så stog det en ordnings vakt där som sa att man inte fick springa där inne.\n " +
                             "Ni blev utkastade och dejten misslyckades.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     case "2":
                         Console.WriteLine("Nej vända om går ju inte att göra. Ni gick igeom korridoren och ingenting hände.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     case "3":
                         Console.WriteLine("Noah blir skit sur och säger att han inte vill dejta mer. Dejten misslyckades.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     case "4":
                         Console.WriteLine("Du är berädd att slå allt och alla som kommer upp i korridoren. Men när ni har gått ignom den så var det inget som hände.\n" +
                             "Förutom att du såg ut som en idiot.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
 
             Console.WriteLine("Du och Noah blir tvugna att vänta lite pågrund av något fel som hade hänt lite längre fram.");
-            Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+            Continue();
 
             dejtVal = "";
             while (dejtVal != "1" && dejtVal != "2")
@@ -1371,23 +1182,17 @@ public void Svea() // startar när du startar dejten med Svea
                         Console.WriteLine("Noah gick upp och kollad ut genom fönstret. Men det var inget vanligt fönster utan det var ett fake fönster och helt " +
                             "plötsligt så döck dett up en person bakom föntret och Noah blev så rädd att han fick en hjärt attack så han dog." +
                             "Dejten misslyckades.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     case "2":
                         Console.WriteLine("Noah gillade inte att han inte fick kolla ut genom föntret så han gick ut och sa att dejten var över. Du misslyckades med dejten.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -1412,30 +1217,22 @@ public void Svea() // startar när du startar dejten med Svea
             {
                 case "1":
                     Console.WriteLine("Ferrari? Verkligen? Den är väll okej antar jag.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 case "2":
                     Console.WriteLine("Nae usch AUDI? Vet du vad... den här dejten är över. Du misslyckades med dejten.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     return;
 
                 case "3":
                     Console.WriteLine("Nu jävlar. Nu snackar vi bra bilar. Firebirden är så jäkla sexig.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
 
                 default:
                     Console.WriteLine("Välj ett giltigt nummer.");
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Continue();
                     break;
             }
 
@@ -1456,44 +1253,32 @@ public void Svea() // startar när du startar dejten med Svea
                 {
                     case "1":
                         Console.WriteLine("BB. Basic Bitch.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
 
                     case "2":
                         Console.WriteLine("Nae det är ju sämre än barebow och långbåge.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
 
                     case "3":
                         Console.WriteLine("Där det där är den bästa utav alla finns inget som slår den.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
 
                     case "4":
                         Console.WriteLine("Okej compund är ju näst bäst iallafall.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
 
                     case "5":
                         Console.WriteLine("Hej då. Du misslyckades med dejten.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -1512,10 +1297,8 @@ public void Svea() // startar när du startar dejten med Svea
                 {
                     case "1":
                         Console.WriteLine("Du attackerade personen. Han är väldigt förvånad.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
-                        
+                        Continue();
+
                         Player player1 = new("Du", 10, 1, 3, 10);
                         Enemy Noah = new("Noah Knutsson", 10, 1, 2, 10, 5);
                         FIght fIght1 = new();
@@ -1536,9 +1319,7 @@ public void Svea() // startar när du startar dejten med Svea
                                 fIght1.Battle(player1, Noah);
                             }
                         }
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
 
                         if (player1.IsAlive == false)
                         {
@@ -1547,15 +1328,11 @@ public void Svea() // startar när du startar dejten med Svea
                         break;
                     case "2":
                         Console.WriteLine("han blev skit rädd tappade vapnet och sprang där ifrån. Du hängde upp det igen.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -1574,30 +1351,22 @@ public void Svea() // startar när du startar dejten med Svea
                 {
                     case "1":
                         Console.WriteLine("Det bästa var när vi såg han som försökte sno ett vapen och du stoppade honom.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
 
                     case "2":
                         Console.WriteLine("Jag har väntat på att någon ska sjunga den på en dejt med mig. Du klarade dejten.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
 
                     case "3":
                         Console.WriteLine("Ni fortsatte att små prata.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
 
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
@@ -1616,25 +1385,26 @@ public void Svea() // startar när du startar dejten med Svea
                 {
                     case "1":
                         Console.WriteLine("Du och Eloise sprang iväg och kom undan. Du klarade dejten.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     case "2":
                         Console.WriteLine("Du gav upp till polisen och Eloise sprang iväg. Du hamnade i fängelse. Du misslyckades med dejten.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         return;
                     default:
                         Console.WriteLine("Välj ett giltigt nummer.");
-                        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                        Console.ReadLine();
-                        Console.Clear();
+                        Continue();
                         break;
                 }
             }
         }
+    }
+
+    public void Continue()
+    {
+        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
+        Console.ReadLine();
+        Console.Clear();
     }
 }
 

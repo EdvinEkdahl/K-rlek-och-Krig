@@ -33,9 +33,7 @@
             {
                 Console.Clear();
                 Console.WriteLine("Grattis, du har nu upplevt alla dejter. Men vill du att ditt lilla äventyr ska sluta så här? Har du upplevt allt du villa uppleva?");
-                Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT AVSLUTA.");
-                Console.ReadLine();
-                Console.Clear();
+                dejter.Continue();
                 playerChoose = "6";
             }
             else
@@ -148,9 +146,7 @@
 
                 default:
                     Console.WriteLine("Välj ett giltigt nummer."); // skrivs ut när du skriver in något som inte står.
-                    Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-                    Console.ReadLine();
-                    Console.Clear();
+                    dejter.Continue();
                     break;
             }
         }
