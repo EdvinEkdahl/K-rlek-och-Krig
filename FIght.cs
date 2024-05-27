@@ -12,6 +12,7 @@ class FIght
     int playerDamage;
     int enemyDamage;
     int playerHeal;
+    string stridVal;
     Random random = new Random();
 
     void EnemyTurn(Player player, Enemy enemy)
@@ -82,6 +83,34 @@ class FIght
 
         Console.WriteLine(player.Name + ": HP: " + player.Health + "/" + player.maxHealth + "\n" +
                           enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth + "\n");
+    }
+
+    public void Fight(Player player, Enemy enemy)
+    {
+        while (player.IsAlive == true && enemy.IsAlive == true)
+        {
+            Console.WriteLine("Vad gör du?\n" +
+                "1) Block\n" +
+                "Allt annat) Attackera");
+            stridVal = Console.ReadLine();
+
+            if (stridVal == "1")
+            {
+                Block(player, enemy);
+            }
+            else
+            {
+                Battle(player, enemy);
+            }
+        }
+        Console.WriteLine("\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
+        Console.ReadLine();
+        Console.Clear();
+
+        if (player.IsAlive == false)
+        {
+            return;
+        }
     }
 }
 
