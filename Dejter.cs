@@ -408,305 +408,40 @@ class Dejter
             Console.WriteLine("Du inser att det finns bara en väg ut ur det här. Du behöver strida mot alla.");
             Continue();
 
-            Player player1 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist1 = new("Miljöaktivist 1", 10, 1, 3, 10, 4);
-            FIght fIght1 = new();
-
-            while (player1.IsAlive == true && Miljöaktivist1.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght1.Block(player1, Miljöaktivist1);
-                }
-                else
-                {
-                    fIght1.Battle(player1, Miljöaktivist1);
-                }
-            }
-            Continue();
-
-            if (player1.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("1/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player2 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist2 = new("Miljöaktivist 2", 10, 1, 3, 10, 3);
-            FIght fIght2 = new();
-
-            while (player2.IsAlive == true && Miljöaktivist2.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght2.Block(player2, Miljöaktivist2);
-                }
-                else
-                {
-                    fIght2.Battle(player2, Miljöaktivist2);
-                }
-            }
-            Continue();
-
-            if (player2.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("2/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player3 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist3 = new("Miljöaktivist 3", 10, 2, 3, 10, 4);
-            FIght fIght3 = new();
-
-            while (player3.IsAlive == true && Miljöaktivist3.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght3.Block(player3, Miljöaktivist3);
-                }
-                else
-                {
-                    fIght3.Battle(player3, Miljöaktivist3);
-                }
-            }
-            Continue();
-
-            if (player3.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("3/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player4 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist4 = new("Miljöaktivist 4", 10, 1, 3, 10, 3);
-            FIght fIght4 = new();
-
-            while (player4.IsAlive == true && Miljöaktivist4.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght4.Block(player4, Miljöaktivist4);
-                }
-                else
-                {
-                    fIght4.Battle(player4, Miljöaktivist4);
-                }
-            }
-            Continue();
-
-            if (player4.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("4/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player5 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist5 = new("Miljöaktivist 5", 10, 1, 3, 10, 3);
-            FIght fIght5 = new();
-
-            while (player5.IsAlive == true && Miljöaktivist5.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght5.Block(player5, Miljöaktivist5);
-                }
-                else
-                {
-                    fIght5.Battle(player5, Miljöaktivist5);
-                }
-            }
-            Continue();
-
-            if (player5.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("5/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player6 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist6 = new("Miljöaktivist 6", 10, 1, 3, 10, 3);
-            FIght fIght6 = new();
-
-            while (player6.IsAlive == true && Miljöaktivist6.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght6.Block(player6, Miljöaktivist6);
-                }
-                else
-                {
-                    fIght6.Battle(player6, Miljöaktivist6);
-                }
-            }
-            Continue();
-
-            if (player6.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("6/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player7 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist7 = new("Miljöaktivist 7", 10, 1, 3, 10, 3);
-            FIght fIght7 = new();
-
-            while (player7.IsAlive == true && Miljöaktivist7.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght7.Block(player7, Miljöaktivist7);
-                }
-                else
-                {
-                    fIght7.Battle(player7, Miljöaktivist7);
-                }
-            }
-            Continue();
-
-            if (player7.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("7/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player8 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist8 = new("Miljöaktivist 8", 10, 1, 3, 10, 3);
-            FIght fIght8 = new();
-
-            while (player8.IsAlive == true && Miljöaktivist8.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght8.Block(player8, Miljöaktivist8);
-                }
-                else
-                {
-                    fIght8.Battle(player8, Miljöaktivist8);
-                }
-            }
-            Continue();
-
-            if (player8.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("8/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player9 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist9 = new("Miljöaktivist 9", 10, 1, 3, 10, 3);
-            FIght fIght9 = new();
-
-            while (player9.IsAlive == true && Miljöaktivist9.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght9.Block(player9, Miljöaktivist9);
-                }
-                else
-                {
-                    fIght9.Battle(player9, Miljöaktivist9);
-                }
-            }
-            Continue();
-
-            if (player9.IsAlive == false)
-            {
-                return;
-            }
-
-            Console.WriteLine("9/10 besegrade. Nästa strid!");
-            Continue();
-
-            Player player10 = new("Du", 10, 1, 3, 10);
-            Enemy Miljöaktivist10 = new("Miljöaktivist 10", 10, 1, 3, 10, 3);
-            FIght fIght10 = new();
-
-            while (player10.IsAlive == true && Miljöaktivist10.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght10.Block(player10, Miljöaktivist10);
-                }
-                else
-                {
-                    fIght10.Battle(player10, Miljöaktivist10);
-                }
-            }
-            Continue();
-
-            if (player10.IsAlive == false)
-            {
-                return;
-            }
             
-            Console.WriteLine("10/10 miljöaktivister besegrade. Bra jobbat.");
-            Continue();
+
+            for (int i = 1; i < 10; i++) 
+            {
+                Player player1 = new("Du", 10, 1, 3, 10);
+                Enemy Miljöaktivist = new("Miljöaktivist", 10, 1, 3, 10, 4);
+                FIght fIght1 = new();
+
+                while (player1.IsAlive == true && Miljöaktivist.IsAlive == true)
+                {
+                    Console.WriteLine("Vad gör du?\n" +
+                        "1) Block\n" +
+                        "Allt annat) Attackera");
+                    stridVal = Console.ReadLine();
+
+                    if (stridVal == "1")
+                    {
+                        fIght1.Block(player1, Miljöaktivist);
+                    }
+                    else
+                    {
+                        fIght1.Battle(player1, Miljöaktivist);
+                    }
+                }
+                Continue();
+
+                if (player1.IsAlive == false)
+                {
+                    return;
+                }
+
+                Console.WriteLine(i + "/10 besegrade.");
+                Continue();
+            }
 
             dejtVal = "";
             while (dejtVal != "1" && dejtVal != "2")
