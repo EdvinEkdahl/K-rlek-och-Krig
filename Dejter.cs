@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 class Dejter
 {
     string dejtVal;
-    string stridVal;
     FIght fIght = new();
 
     //Här är alla dejter och vad som kommer att hända i dem.
