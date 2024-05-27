@@ -9,16 +9,15 @@ class Dejter
 {
     string dejtVal;
     string stridVal;
+    FIght fIght = new();
 
     //Här är alla dejter och vad som kommer att hända i dem.
     public void Alicia() // startar när du startar dejtem med Alicia
     {        
-            Console.WriteLine("Du får ett samtal.\nPersonen som ringer säger att någon som du möter under dejten kommer att försöka mörda dig." +
-                "\n\nTRYCK PÅ ENTER FÖR ATT FORTSÄTTA.");
-            Console.ReadLine();
-            Console.Clear();
+        Console.WriteLine("Du får ett samtal.\nPersonen som ringer säger att någon som du möter under dejten kommer att försöka mörda dig.");
+        Continue();
 
-            dejtVal = "";
+        dejtVal = "";
         while (dejtVal != "1" && dejtVal != "2" && dejtVal != "3") // stänger av while loopen när man skriver in 1, 2 eller 3.
         {
             Console.WriteLine("Du träffar Alicia i en park, ni går runt och pratar om blommor.");
@@ -67,27 +66,7 @@ class Dejter
                     case "1": // startar en fight encounter
                         Player player = new("Du", 10, 1, 3, 10);
                         Enemy GlassGubben = new("Glass Gubben", 10, 1, 3, 10, 4);
-                        FIght fIght = new();
-
-                        while (player.IsAlive == true && GlassGubben.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght.Block(player, GlassGubben);
-                            }
-                            else
-                            {
-                                fIght.Battle(player, GlassGubben);
-                            }
-                        }
-                        Continue();
-
-                        if (player.IsAlive == false)
+                        if (fIght.Fight(player, GlassGubben) == false)
                         {
                             return;
                         }
@@ -157,27 +136,7 @@ class Dejter
 
             Player player1 = new("Du", 10, 1, 3, 10);
             Enemy Blomtjejen = new("Blom Tjejen", 10, 1, 3, 10, 4);
-            FIght fIght1 = new();
-
-            while (player1.IsAlive == true && Blomtjejen.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght1.Block(player1, Blomtjejen);
-                }
-                else
-                {
-                    fIght1.Battle(player1, Blomtjejen);
-                }
-            }
-            Continue();
-
-            if (player1.IsAlive == false)
+            if (fIght.Fight(player1, Blomtjejen) == false)
             {
                 return;
             }
@@ -197,27 +156,7 @@ class Dejter
                     case "1":
                         Player player2 = new("Du", 10, 1, 3, 10);
                         Enemy Mikael = new("Mikael", 10, 1, 2, 10, 5);
-                        FIght fIght2 = new();
-
-                        while (player2.IsAlive == true && Mikael.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght2.Block(player2, Mikael);
-                            }
-                            else
-                            {
-                                fIght2.Battle(player2, Mikael);
-                            }
-                        }
-                        Continue();
-
-                        if (player2.IsAlive == false)
+                        if (fIght.Fight(player2, Mikael) == false)
                         {
                             return;
                         }
@@ -232,27 +171,7 @@ class Dejter
 
                         Player player3 = new("Du", 10, 1, 3, 10);
                         Enemy Alicia = new("Alicia Datura", 10, 1, 3, 10, 2);
-                        FIght fIght3 = new();
-
-                        while (player3.IsAlive == true && Alicia.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght3.Block(player3, Alicia);
-                            }
-                            else
-                            {
-                                fIght3.Battle(player3, Alicia);
-                            }
-                        }
-                        Continue();
-
-                        if (player3.IsAlive == false)
+                        if (fIght.Fight(player3, Alicia) == false)
                         {
                             return;
                         }
@@ -336,31 +255,10 @@ class Dejter
             Continue();
             Player player = new("Du", 10, 1, 3, 10);
             Enemy TräStock = new("Trä Stock", 5, 10, 10, 5, 6);
-            FIght fIght = new();
-
-            while (player.IsAlive == true && TräStock.IsAlive == true)
-            {
-                Console.WriteLine("Vad gör du?\n" +
-                    "1) Block\n" +
-                    "Allt annat) Attackera");
-                stridVal = Console.ReadLine();
-
-                if (stridVal == "1")
-                {
-                    fIght.Block(player, TräStock);
-                }
-                else
-                {
-                    fIght.Battle(player, TräStock);
-                }
-            }
-            Continue();
-
-            if (player.IsAlive == false)
+            if (fIght.Fight(player, TräStock) == false)
             {
                 return;
             }
-            
 
             dejtVal = "";
             while (dejtVal != "1" && dejtVal != "2" && dejtVal != "3" && dejtVal != "4" && dejtVal != "5")
@@ -414,31 +312,10 @@ class Dejter
             {
                 Player player1 = new("Du", 10, 1, 3, 10);
                 Enemy Miljöaktivist = new("Miljöaktivist", 10, 1, 3, 10, 4);
-                FIght fIght1 = new();
-
-                while (player1.IsAlive == true && Miljöaktivist.IsAlive == true)
-                {
-                    Console.WriteLine("Vad gör du?\n" +
-                        "1) Block\n" +
-                        "Allt annat) Attackera");
-                    stridVal = Console.ReadLine();
-
-                    if (stridVal == "1")
-                    {
-                        fIght1.Block(player1, Miljöaktivist);
-                    }
-                    else
-                    {
-                        fIght1.Battle(player1, Miljöaktivist);
-                    }
-                }
-                Continue();
-
-                if (player1.IsAlive == false)
+                if (fIght.Fight(player1, Miljöaktivist) == false)
                 {
                     return;
                 }
-
                 Console.WriteLine(i + "/10 besegrade.");
                 Continue();
             }
@@ -458,27 +335,7 @@ class Dejter
                     case "1":
                         Player player11 = new("Du", 10, 1, 3, 10);
                         Enemy Tom = new("Tom “Djurälskare” Bob Spärrskaft", 10, 3, 5, 10, 1);
-                        FIght fIght11 = new();
-
-                        while (player11.IsAlive == true && Tom.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght11.Block(player11, Tom);
-                            }
-                            else
-                            {
-                                fIght11.Battle(player11, Tom);
-                            }
-                        }
-                        Continue();
-
-                        if (player11.IsAlive == false)
+                        if (fIght.Fight(player11, Tom) == false)
                         {
                             return;
                         }
@@ -497,9 +354,6 @@ class Dejter
                         break;
                 }
             }
-
-
-
         }
     }
 
@@ -563,27 +417,7 @@ public void Svea() // startar när du startar dejten med Svea
 
                         Player player = new("Du", 10, 1, 3, 10);
                         Enemy Servitrisen = new("Servitrisen", 10, 1, 2, 10, 6);
-                        FIght fIght = new();
-
-                        while (player.IsAlive == true && Servitrisen.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght.Block(player, Servitrisen);
-                            }
-                            else
-                            {
-                                fIght.Battle(player, Servitrisen);
-                            }
-                        }
-                        Continue();
-
-                        if (player.IsAlive == false)
+                        if (fIght.Fight(player, Servitrisen) == false)
                         {
                             return;
                         }
@@ -600,27 +434,7 @@ public void Svea() // startar när du startar dejten med Svea
 
                         Player player1 = new("Du", 10, 1, 3, 10);
                         Enemy Servitrisen1 = new("Servitrisen", 10, 1, 2, 10, 6);
-                        FIght fIght1 = new();
-
-                        while (player1.IsAlive == true && Servitrisen1.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght1.Block(player1, Servitrisen1);
-                            }
-                            else
-                            {
-                                fIght1.Battle(player1, Servitrisen1);
-                            }
-                        }
-                        Continue();
-
-                        if (player1.IsAlive == false)
+                        if (fIght.Fight(player1, Servitrisen1) == false)
                         {
                             return;
                         }
@@ -660,27 +474,7 @@ public void Svea() // startar när du startar dejten med Svea
 
                         Player player2 = new("Du", 10, 1, 3, 10);
                         Enemy Servitrisen2 = new("Servitrisen", 10, 1, 2, 10, 6);
-                        FIght fIght2 = new();
-
-                        while (player2.IsAlive == true && Servitrisen2.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght2.Block(player2, Servitrisen2);
-                            }
-                            else
-                            {
-                                fIght2.Battle(player2, Servitrisen2);
-                            }
-                        }
-                        Continue();
-
-                        if (player2.IsAlive == false)
+                        if (fIght.Fight(player2, Servitrisen2) == false)
                         {
                             return;
                         }
@@ -696,27 +490,7 @@ public void Svea() // startar när du startar dejten med Svea
 
                         Player player3 = new("Du", 10, 1, 3, 10);
                         Enemy Servitrisen3 = new("Servitrisen", 10, 1, 2, 10, 6);
-                        FIght fIght3 = new();
-
-                        while (player3.IsAlive == true && Servitrisen3.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght3.Block(player3, Servitrisen3);
-                            }
-                            else
-                            {
-                                fIght3.Battle(player3, Servitrisen3);
-                            }
-                        }
-                        Continue();
-
-                        if (player3.IsAlive == false)
+                        if (fIght.Fight(player3, Servitrisen3) == false)
                         {
                             return;
                         }
@@ -828,27 +602,7 @@ public void Svea() // startar när du startar dejten med Svea
 
                         Player player = new("Du", 10, 1, 3, 10);
                         Enemy Zombie = new("Zombie Skådespelaren", 10, 1, 3, 10, 4);
-                        FIght fIght = new();
-
-                        while (player.IsAlive == true && Zombie.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght.Block(player, Zombie);
-                            }
-                            else
-                            {
-                                fIght.Battle(player, Zombie);
-                            }
-                        }
-                        Continue();
-
-                        if (player.IsAlive == false)
+                        if (fIght.Fight(player, Zombie) == false)
                         {
                             return;
                         }
@@ -1034,29 +788,9 @@ public void Svea() // startar när du startar dejten med Svea
                         Console.WriteLine("Du attackerade personen. Han är väldigt förvånad.");
                         Continue();
 
-                        Player player1 = new("Du", 10, 1, 3, 10);
+                        Player player = new("Du", 10, 1, 3, 10);
                         Enemy Noah = new("Noah Knutsson", 10, 1, 2, 10, 5);
-                        FIght fIght1 = new();
-
-                        while (player1.IsAlive == true && Noah.IsAlive == true)
-                        {
-                            Console.WriteLine("Vad gör du?\n" +
-                                "1) Block\n" +
-                                "Allt annat) Attackera");
-                            stridVal = Console.ReadLine();
-
-                            if (stridVal == "1")
-                            {
-                                fIght1.Block(player1, Noah);
-                            }
-                            else
-                            {
-                                fIght1.Battle(player1, Noah);
-                            }
-                        }
-                        Continue();
-
-                        if (player1.IsAlive == false)
+                        if (fIght.Fight(player, Noah) == false)
                         {
                             return;
                         }
@@ -1142,5 +876,3 @@ public void Svea() // startar när du startar dejten med Svea
         Console.Clear();
     }
 }
-
-

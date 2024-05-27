@@ -85,7 +85,7 @@ class FIght
                           enemy.Name + ": HP: " + enemy.Health + "/" + enemy.maxHealth + "\n");
     }
 
-    public void Fight(Player player, Enemy enemy)
+    public bool Fight(Player player, Enemy enemy)
     {
         while (player.IsAlive == true && enemy.IsAlive == true)
         {
@@ -109,8 +109,9 @@ class FIght
 
         if (player.IsAlive == false)
         {
-            return;
+            return false;
         }
+        return true;
     }
 }
 
